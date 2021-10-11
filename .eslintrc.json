@@ -1,0 +1,35 @@
+{
+    "extends": ["react-app", "prettier"],
+    "plugins": ["react", "prettier"],
+    "rules": {
+        "prettier/prettier": [
+            "warn",
+            {
+              "arrowParens": "avoid",
+              "semi": true,
+              "trailingComma": "none",
+              "endOfLine": "auto",
+              "tabWidth": 2,
+              "printWidth": 120,
+              "useTabs": false,
+              "singleQuote": true
+            }
+        ]
+    },
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "env": {
+        "browser": true,
+        "es6": true,
+        "jquery": true
+    },
+    "globals": {
+        "arguments": true,
+        "$": true
+    }
+}
